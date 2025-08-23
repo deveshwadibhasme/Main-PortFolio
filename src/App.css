@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+
+#root {
+  font-family: "Ubuntu", sans-serif;
+
+  @apply min-h-screen max-w-screen px-2 py-5 mx-auto bg-gradient-to-tl 
+  from-zinc-800 via-violet-600 to-pink-900 text-white;
+}

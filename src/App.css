@@ -1,9 +1,77 @@
 @import "tailwindcss";
 
+@theme {
+  --color-black-theme: #131313;
+  --color-violet:#7f22fe;
+}
 
 #root {
   font-family: "Ubuntu", sans-serif;
 
-  @apply min-h-screen max-w-screen px-2 py-5 mx-auto bg-gradient-to-tl 
-  from-zinc-800 via-violet-600 to-pink-900 text-white;
+  @apply min-h-screen max-w-screen px-2 py-5 mx-auto bg-black-theme text-white;
 }
+
+.home-gradient::after {
+  content: "";
+  position: absolute;
+  top: -110px;
+  right: 0;
+  width: 55%;
+  height: 110%;
+  filter: blur(80px);
+  border-top-left-radius: 60%;
+  border-bottom-left-radius: 20%;
+  z-index: 0;
+
+  @apply bg-gradient-to-tl from-white via-violet-600 to-pink-900;
+}
+
+.home-gradient::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: 40%;
+  width: 10%;
+  height: 100%;
+  z-index: 0;
+  filter: blur(100px);
+
+  @apply bg-gradient-to-tl from-zinc-800 via-violet-600 to-pink-900;
+}
+
+.flex-center {
+  @apply flex items-center justify-between;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 0px;
+
+  transition: height 0.2s ease;
+}
+
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+  width: 105%;
+  height: 4px;
+  @apply bg-violet;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+  width: 105%;
+  height: 4px;
+  @apply bg-violet;
+}
+
+/* bg-gradient-to-tl from-zinc-800 via-violet-600 to-pink-900 */

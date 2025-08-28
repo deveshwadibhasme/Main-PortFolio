@@ -28,7 +28,7 @@ const Header = () => {
         <img className="h-full w-full" src={Logo} alt="" />
       </div>
       <nav
-        className={`max-w-[80%] md:max-w-1/2 w-full text-lg flex-col flex justify-between gap-6 border-violet-500 border-1 p-2 md:p-0 md:border-0 md:gap-0 items-center absolute md:relative left-1/2 md:left-0 translate-x-[-50%] md:translate-x-0 transition-all duration-500 ease-in-out ${nav ? 'top-15 visible opacity-100' : 'top-0 invisible opacity-0'} md:top-0 z-8 min-h-50 h-full bg-black/30 md:bg-transparent md:min-h-15 text-white md:flex-row`}
+        className={`max-w-[80%] md:max-w-1/2 w-full text-lg flex-col flex justify-between gap-6 border-violet-500 border-1 p-2 md:p-0 md:border-0 md:gap-0 items-center absolute md:relative left-1/2 md:left-0 translate-x-[-50%] md:translate-x-0 transition-all duration-500 ease-in-out ${nav ? 'top-15 visible opacity-100' : 'top-1 invisible md:visible opacity-0 md:opacity-100'} md:top-0 z-8 min-h-50 h-full bg-black/30 md:bg-transparent md:min-h-15 text-white md:flex-row`}
       >
         {navItems.map((item, index) => {
           return (

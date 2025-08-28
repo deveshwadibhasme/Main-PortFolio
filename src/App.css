@@ -21,7 +21,7 @@
   filter: blur(80px);
   border-top-left-radius: 60%;
   border-bottom-left-radius: 20%;
-  z-index: 0;
+  z-index: 1;
 
   @apply bg-gradient-to-tl from-white via-violet-600 to-pink-900;
 }

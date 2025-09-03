@@ -23,7 +23,7 @@ const Header = () => {
   }
 
   return (
-    <header className="text-2xl min-h-15 z-20 sticky top-5 w-full max-w-screen-lg border-1 md:overflow-hidden border-violet-500 rounded-full text-center backdrop-blur-2xl flex items-center gap-14 px-10 bg-black/20 mx-auto">
+    <header className="text-2xl min-h-15 z-30 sticky top-5 w-full max-w-screen-lg border-1 md:overflow-hidden border-violet-500 rounded-full text-center backdrop-blur-2xl flex items-center gap-14 px-10 bg-black/20 mx-auto">
       <div className="title h-15 w-15">
         <img className="h-full w-full" src={Logo} alt="" />
       </div>
